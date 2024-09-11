@@ -17,7 +17,7 @@ public class Implementor {
 
     public void viewDetails() {
 
-        String eligibility = (this.age < 18 || this.age > 65 && this.bmi < 18.5 || this.bmi > 30.0) ? "Eligible" : "Not Eligible";
+        String eligibility = (this.age > 18 || this.age < 65 && this.bmi > 18.5 || this.bmi < 30.0) ? "Eligible" : "Not Eligible";
 
         System.out.println("------------------------------------------------------------------------------------------------");
         System.out.printf("%-10s %-15s %-10s %-10s %-20s %-20s", "ID", "Name", "Age", "BMI", "Fitness Goal", "Eligibility");

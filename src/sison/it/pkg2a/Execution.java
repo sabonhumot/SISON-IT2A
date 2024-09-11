@@ -29,8 +29,9 @@ public class Execution {
             double bmi = input.nextDouble();
             input.nextLine();
             
-            System.out.print("Fitness Goals: \n");
+            System.out.print("Fitness Goals: ");
             String fg = input.nextLine();
+            
             
             imp[x] = new Implementor();
             imp[x].addDetails(id, name, age, bmi, fg);
